@@ -6,9 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Game</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="card-deck-css/css/cardstarter.css"/>
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    Card Game
+    <div class="game-container">
+        <div class="start-container">
+            <button id="hit-card-btn">Hit</button>
+            <button id="stand-card-btn">Stand</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        <div class="inPlay-card-container">
+            <div class="cpu-inPlay-container">
+                <div class="card large back-red" id="cpu-card"></div>
+                <div class="card large back-red" id="cpu-card"></div>
+            </div>
+            <div class="player-inPlay-container">
+                <div class="card large back-blue" id="player-card"></div>
+                <div class="card large back-blue" id="player-card"></div>
+            </div>
+        </div>
+        <div class="tally-container">
+            <div class="cpu-tally-container">
+                <div class="cpu-tally">CPU Total:</div>
+            </div>
+            <div class="player-tally-container">
+                <div class="player-tally">Player Total:</div>
+            </div>
+        </div>
+        <div class="win-message"></div>
+    </div>
 </body>
 </html>
